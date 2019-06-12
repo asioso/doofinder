@@ -1,0 +1,36 @@
+{
+  "name": "asioso/doofinder",
+  "type": "pimcore-bundle",
+  "license": "GPL-3.0-or-later",
+  "description": "A bundle to help with dooFinder",
+  "keywords": [
+    "pimcore",
+    "pimcore-plugin",
+    "doofinder",
+    "e-commerce"
+  ],
+  "homepage": "https://www.asioso.com",
+  "authors": [
+    {
+      "name": "Fabian Pechstein",
+      "email": "fabian.pechstein@asioso.com",
+      "homepage": "https://www.asioso.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "doofinder/doofinder": "^5"
+  },
+  "autoload": {
+    "psr-4": {
+      "DooFinderBundle\\": "src/DooFinderBundle"
+    }
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "DooFinderBundle\\DooFinderBundle"
+      ]
+    }
+  }
+}

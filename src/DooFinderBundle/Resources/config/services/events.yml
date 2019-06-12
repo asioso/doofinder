@@ -1,0 +1,11 @@
+services:
+
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+
+      #DooFinderBundle\EventListener\DataObjectPersistenceSubscriber:
+      #tags:
+    #   - { name: kernel.event_subscriber }

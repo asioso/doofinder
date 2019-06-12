@@ -1,0 +1,4 @@
+dooFinder:
+  resource: "@DooFinderBundle/Controller/DooFinderController.php"
+  type:     annotation
+

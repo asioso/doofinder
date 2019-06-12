@@ -1,0 +1,47 @@
+services:
+
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+
+  DooFinderBundle\Manager\IClassManager: '@DooFinderBundle\Manager\ItemManager'
+
+  DooFinderBundle\Manager\ItemManager: ~
+
+  DooFinderBundle\DependencyInjection\DooFinder\IDooFinderSearchEngineFactory: '@DooFinderBundle\DependencyInjection\DooFinder\DooFinderSearchEngineFactory'
+
+  DooFinderBundle\DependencyInjection\DooFinder\DooFinderSearchEngineFactory: ~
+
+  DooFinderBundle\DependencyInjection\DooFinder\IDooFinderService: '@DooFinderBundle\DependencyInjection\DooFinder\DooFinderService'
+
+  DooFinderBundle\DependencyInjection\DooFinder\DooFinderService: ~
+
+  DooFinderBundle\DependencyInjection\DooFinder\IDooFinderClient:  '@DooFinderBundle\DependencyInjection\DooFinder\DooFinderClient'
+
+  DooFinderBundle\DependencyInjection\DooFinder\DooFinderClient:
+    arguments: [ "%doo_finder_management_api_key%" ]
+
+  dfb.reference.manager: '@DooFinderBundle\Manager\DefaultDooFinderIndexReferenceManager'
+
+  DooFinderBundle\Manager\DefaultDooFinderIndexReferenceManager: ~
+
+
+  DooFinderBundle\DependencyInjection\DooFinder\IDooFinderServiceHandler: '@DooFinderBundle\DependencyInjection\DooFinder\DefaultDooFinderServiceHandler'
+
+  DooFinderBundle\DependencyInjection\DooFinder\DefaultDooFinderServiceHandler: ~
+
+  DooFinderBundle\File\FileHandler:
+    arguments:
+      - '%kernel.root_dir%/../data/'
+      - '@logger'
+
+  DooFinderBundle\DependencyInjection\DooFinderSearch\IDooFinderSearchService: '@DooFinderBundle\DependencyInjection\DoofinderSearch\DooFinderSearchService'
+
+  DooFinderBundle\DependencyInjection\DooFinderSearch\DooFinderSearchService:
+    arguments:
+      - '%doo_finder_search_api_key%'
+      - '@logger'
+
+  DooFinderBundle\RenderService\FrontendRenderService:
