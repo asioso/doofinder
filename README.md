@@ -1,4 +1,4 @@
-#DooFinder Bundle
+# DooFinder Bundle
 
 ## Prerequisites
 * PHP 7.1 or higher (https://secure.php.net/)
@@ -8,9 +8,9 @@
 
 
 
-##Installation
+## Installation
 
-###composer
+### composer
 in your composer.json file add the following repo under your
 
 ```json
@@ -40,13 +40,12 @@ add the bundle to composer.json with
 composer require asioso/doofinder:dev-master
 
 ```
-###Extension manager
-no need to enable the bundle in the pimcore extension manager after you have run composer,, it's automatically taken care of.
+### Extension manager
+just enable and install the Bundle in the pimcore extension manager
 
+<!-- ![ext_manager_screenshot][extension_manager] -->
 
-![ext_manager_screenshot][extension_manager]
-
-It might be possible that you have to add the minimal configuration in any project related config.yml file first, otherwise the Kernel might not boot. 
+<!-- It might be possible that you have to add the minimal configuration in any project related config.yml file first, otherwise the Kernel might not boot. --> 
 
 
 
@@ -63,7 +62,7 @@ If you are familiar with Pimcore you will know that you have multiple possibilit
 You can find a implementation of such a command [here](https://github.com/asioso/pimcore-doofinder-module/src/master/examples/Feed/BuildDooFinderDataFeedCommand.php), which uses both default  object listings and *AdvancedMysql* Index Service and runs with efficient ressource management in mind.
  
 
-##More Details
+## More Details
 
 [Configuration](/documentation/configuration.md)
 

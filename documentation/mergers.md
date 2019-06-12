@@ -1,4 +1,4 @@
-#Mergers
+# Mergers
 
 You might ask: "What the Hell?" But they offer more flexibility and additional processing callbacks. 
 For example  take a look at the configuration below, where we want to get a product's type (s) following doofinder's documentation ([More than one category? Right on!](https://www.doofinder.com/support/the-data-feed/the-product-data-feed#more-than-one-category-right-on)) 

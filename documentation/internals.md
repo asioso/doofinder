@@ -1,13 +1,13 @@
-#Internals
+# Internals
 
-##What is doofinder
+## What is doofinder
 
 If you are not familar with doofinder it's best to take a look at their [website](https://www.doofinder.com/en/?fp_ref=asioso). BUT basically they provide a search engine for your content/products etc., which is accessible either by API or customizable search layer to you and your clients.
 
 All you have to do is to make your content available to doofinder and include their search snippet.
 
 
-##Bundle Architecture
+## Bundle Architecture
 This Pimcore Bundle should help you with bringing your content to doofinder's search engines. There are two approaches to connect do doofinder:
 
 

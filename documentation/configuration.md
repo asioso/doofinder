@@ -1,4 +1,4 @@
-##Configuration
+## Configuration
 
 
 what's absolutely necessary to be added to your config.yml file:
@@ -9,11 +9,11 @@ doo_finder:
 
 ````
 
-###Define your Engine Configurations
+### Define your Engine Configurations
 Take a look [here](internals.md) for a deeper insights on the internal workings of this bundle, but in short:
 doofinder let's you define multiple search engines for your account. Each of these engines might have several **types** (so to say indices) for content. Each **type**'s content might greatly differ in structure and content, however they all must share the same *language*-property (also *currency*!) from their parent engine. 
 
-####So why does this matter?
+#### So why does this matter?
 For example you want to put your webshop's products from pimcore to doofinder. Let's say you have active localization for German (DE) und English (EN) and Prices in Euro(€) and Pound(£). That would mean you would still have to create two search engines in doofinder, one for each language respectively.
 
 So you will have add the following configurations (simplified)
@@ -53,7 +53,7 @@ Keep this in mind, but apparently that's how doofinder is designed.
 
 This is due to design and let's us determine an engine and type specific representation per Object.  This is important, you can read more on this in the [internals](internals.md). 
 
-####Some Example Configuration
+#### Some Example Configuration
 
 Below you can see a configuration we have been using for a project. We are using 3 **types** for one search engine. So each bundle-engine here uses the same <hashId> but references different *types*.
 
