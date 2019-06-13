@@ -37,7 +37,7 @@ asioso/doofinder A bundle to help with dooFinder
 
 add the bundle to composer.json with
 ```
-composer require asioso/doofinder:dev-master
+composer require asioso/pimcore-doofinder:dev-master
 
 ```
 ### Extension manager

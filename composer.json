@@ -1,5 +1,5 @@
 {
-  "name": "asioso/doofinder",
+  "name": "asioso/pimcore-doofinder",
   "type": "pimcore-bundle",
   "license": "GPL-3.0-or-later",
   "description": "A bundle to help with dooFinder",
