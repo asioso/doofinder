@@ -127,6 +127,6 @@ class DooFinderBundle extends Bundle implements PimcoreBundleInterface
      */
     protected function getComposerPackageName(): string
     {
-        return 'asioso/pimcore-doofinder-module';
+        return 'asioso/doofinder';
     }
 }
