@@ -11,35 +11,15 @@
 ## Installation
 
 ### composer
-in your composer.json file add the following repo under your
+just run:
 
-```json
-"repositories": [
-    {
-      "type": "vcs",
-      "url":  "git@github.com:asioso/doofinder.git"
-    }
-  ],
+```bash
+
+composer require asioso/pimcore-doofinder:dev-master
+
 ``` 
 
 
-
-after that make sure you have access to the repo and added your ssh key to your bitbucket account.
-test if composer can find the package.
-
-```
-composer search asioso
-
->>>>>
-asioso/doofinder A bundle to help with dooFinder  
-
-```
-
-add the bundle to composer.json with
-```
-composer require asioso/pimcore-doofinder:dev-master
-
-```
 ### Extension manager
 just enable and install the Bundle in the pimcore extension manager
 
