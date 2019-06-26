@@ -39,7 +39,7 @@ LG Flatron M2262D 22" Full HD LCD|http://www.example.com/electronics/tv/LGM2262D
 
 ```
 
-We use the bundles configuration (see here: [Configuration](configuration.md)) to determine what should be in the file.
+We use the bundles configuration (see here: [Configuration](https://github.com/asioso/doofinder/blob/master/documentation/configuration.md)) to determine what should be in the file.
 
 so basically all you have to do is to call this (this is taken from [our example command](https://github.com/asioso/doofinder/src/master/examples/Feed/BuildDooFinderDataFeedCommand.php ):
 ```php
@@ -106,6 +106,9 @@ You can use a controller action we wrote to render all required javascript. exam
 
 ```
 
+this is the demo layer for example: 
+
+![demo_screenshot][demo]
             
 
 
@@ -122,4 +125,5 @@ Read more here:
 
 
 <!--image definitions-->
+[demo]: https://github.com/asioso/doofinder/raw/master/documentation/images/demo.png "Stats"
 [feed]: https://github.com/asioso/doofinder/raw/master/documentation/images/feed.png "Extension Manager"

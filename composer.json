@@ -2,7 +2,7 @@
   "name": "asioso/pimcore-doofinder",
   "type": "pimcore-bundle",
   "license": "GPL-3.0-or-later",
-  "description": "A bundle to help with dooFinder",
+  "description": "Connects Pimcore with the Powerful, Easy and Affordable E-Commerce Search Engine Doofinder providing Autocomplete, Custom Results, Facets navigation, Boosting, Real-time statistics, Synonyms and many more.",
   "keywords": [
     "pimcore",
     "pimcore-plugin",
@@ -12,6 +12,12 @@
   "homepage": "https://www.asioso.com",
   "authors": [
     {
+      "name": "asioso GmbH",
+      "homepage": "https://www.asioso.com",
+      "email": "info@asioso.de",
+      "role": "Developer"
+    },
+    {
       "name": "Fabian Pechstein",
       "email": "fabian.pechstein@asioso.com",
       "homepage": "https://www.asioso.com",
@@ -19,7 +25,9 @@
     }
   ],
   "require": {
-    "doofinder/doofinder": "^5"
+    "doofinder/doofinder": "^5",
+    "symfony/symfony": "^3.4",
+    "pimcore/pimcore": "^5"
   },
   "autoload": {
     "psr-4": {

@@ -10,7 +10,7 @@ doo_finder:
 ````
 
 ### Define your Engine Configurations
-Take a look [here](internals.md) for a deeper insights on the internal workings of this bundle, but in short:
+Take a look [here](https://github.com/asioso/doofinder/blob/master/documentation/internals.md) for a deeper insights on the internal workings of this bundle, but in short:
 doofinder let's you define multiple search engines for your account. Each of these engines might have several **types** (so to say indices) for content. Each **type**'s content might greatly differ in structure and content, however they all must share the same *language*-property (also *currency*!) from their parent engine. 
 
 #### So why does this matter?
