@@ -28,17 +28,16 @@ composer require asioso/pimcore-doofinder:dev-master
 just enable and install the Bundle in the pimcore extension manager
 
 
-
 ## Configuration
 
 what's absolutely necessary to be added to your config.yml file:
 
-````
+```
 doo_finder:
     search_api_key: "<search-api-key>"
     management_api_key: "<management-api-key>"
 
-````
+```
 
 ### Define your Engine Configurations
 
@@ -110,7 +109,7 @@ way more interesting are the engine's item definitions. *class* defines the obje
 This settings and behavior came up during development, so there is still potential to do this better and more user friendly. Configuration can be quite redundant right now for example.
 
 
-````
+```
 doo_finder:
         search_api_key: "<search-api-key>"
         management_api_key: "<management-api-key>"
@@ -186,7 +185,7 @@ doo_finder:
                         #-  {dfAttribute: "content", classAttribute: "self", merger: [ { class: "AppBundle\\doofinder\\PageContentMerger" } ] }
 
 
-````
+```
 
 
 
