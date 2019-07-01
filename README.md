@@ -18,15 +18,12 @@
 just run:
 
 ```bash
-
 composer require asioso/pimcore-doofinder:dev-master
-
-``` 
+```
 
 ### Extension manager
 
-just enable and install the Bundle in the pimcore extension manager
-
+just enable and install the Bundle in the pimcore extension manager.
 
 ## Configuration
 
@@ -36,7 +33,6 @@ what's absolutely necessary to be added to your config.yml file:
 doo_finder:
     search_api_key: "<search-api-key>"
     management_api_key: "<management-api-key>"
-
 ```
 
 ### Define your Engine Configurations
