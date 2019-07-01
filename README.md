@@ -27,10 +27,6 @@ composer require asioso/pimcore-doofinder:dev-master
 
 just enable and install the Bundle in the pimcore extension manager
 
-<!-- ![ext_manager_screenshot][extension_manager] -->
-
-<!-- It might be possible that you have to add the minimal configuration in any project related config.yml file first, otherwise the Kernel might not boot. --> 
-
 
 
 ## Configuration
