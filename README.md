@@ -14,6 +14,7 @@
 ## Installation
 
 ### composer
+
 just run:
 
 ```bash
@@ -21,7 +22,6 @@ just run:
 composer require asioso/pimcore-doofinder:dev-master
 
 ``` 
-
 
 ### Extension manager
 
@@ -35,8 +35,8 @@ just enable and install the Bundle in the pimcore extension manager
 
 ## Configuration
 
-
 what's absolutely necessary to be added to your config.yml file:
+
 ````
 doo_finder:
     search_api_key: "<search-api-key>"
@@ -82,13 +82,14 @@ Given the case you would like to offer both currencies in both languages, you wi
 Keep this in mind, but apparently that's how doofinder is designed. 
 
 **Note** before you continue reading, I'm aware that there is some potential in mixing up terminology, because of the following:
+
 * in doofinder:
     * an engine is just a *search engine* with any number of types (indices) attached.
 * in this bundle:
     * an engine refers to exactly one engine and one type.
    
 
-This is due to design and let's us determine an engine and type specific representation per Object.  This is important, you can read more on this in the [internals](internals.md). 
+This is due to design and let's us determine an engine and type specific representation per Object.  This is important, you can read more on this in the [internals](https://github.com/asioso/doofinder/blob/master/documentation/internals.md). 
 
 #### Some Example Configuration
 
@@ -100,11 +101,12 @@ Below you can see a configuration we have been using for a project. We are using
 
 
 way more interesting are the engine's item definitions. *class* defines the object's classname it's "listening" to, the *field* set defines the feed representation.
+
 *  **dfAttribute**: is the attribute's name obviously (this will end up in feeds header line)
 *  **classAttribute**: either:
     * 'self' with combination of a merger 
     * the attributes Name. e.g 'description' - we are using PathProperty and Reflection to retrieve the value
-*  **merger**: originally designed to merge arrays, but can be used to do other things as well. just use it as a callback where you can control the output. see [here](mergers.md) for more details
+*  **merger**: originally designed to merge arrays, but can be used to do other things as well. just use it as a callback where you can control the output. see [here](https://github.com/asioso/doofinder/blob/master/documentation/mergers.md) for more details
 *  **locale**: very useful if the classAttribute is a localized field
 *  **getter**: if classAttribute itself is another object, then *getter* will be executed.     
 
