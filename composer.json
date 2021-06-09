@@ -25,9 +25,8 @@
     }
   ],
   "require": {
-    "doofinder/doofinder": "^5",
-    "symfony/symfony": "^3.4",
-    "pimcore/pimcore": "^5"
+    "doofinder/doofinder": "^6.0",
+    "pimcore/pimcore": "^6.0"
   },
   "autoload": {
     "psr-4": {
