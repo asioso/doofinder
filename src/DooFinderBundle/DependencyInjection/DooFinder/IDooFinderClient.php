@@ -18,8 +18,8 @@ interface IDooFinderClient
 {
 
     /**
-     * @return \Doofinder\Api\Management\Client
+     * @return \Doofinder\Management\ManagementClient
      */
-    public function getClient(): \Doofinder\Api\Management\Client;
+    public function getClient(): \Doofinder\Management\ManagementClient;
 
 }

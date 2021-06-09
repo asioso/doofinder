@@ -518,7 +518,7 @@ abstract class AbstractDooFinderService implements IDooFinderService
     protected function init()
     {
         // Get a list of search engines
-        $this->searchEngines = $this->client->getClient()->getSearchEngines();
+        $this->searchEngines = $this->client->getClient()->listSearchEngines();
         foreach ($this->searchEngines as $engine) {
             /**
              * @var $engine SearchEngine

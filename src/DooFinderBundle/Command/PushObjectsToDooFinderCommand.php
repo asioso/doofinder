@@ -51,7 +51,7 @@ class PushObjectsToDooFinderCommand extends AbstractCommand
     {
         $this
             ->setName('doo:push')
-            ->addOption('id', null, InputOption::VALUE_REQUIRED, null)
+            ->addOption('id', null, InputOption::VALUE_REQUIRED)
             ->setDescription('push all published objects to dooFinder SearchEngines (definition by config)');
     }
 

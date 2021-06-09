@@ -22,7 +22,7 @@ class DooFinderClient implements IDooFinderClient
 {
 
     /**
-     * @var \Doofinder\Api\Management\Client
+     * @var \Doofinder\Management\ManagementClient
      */
     private $client = null;
     /**
@@ -51,7 +51,7 @@ class DooFinderClient implements IDooFinderClient
     {
         try {
             // Instantiate the object, use your Doofinder's API_KEY.
-            $this->client = new \Doofinder\Api\Management\Client($apiKey);
+            $this->client = new \Doofinder\Management\ManagementClient('https://eu1-api.doofinder.com', $apiKey);
 
         } catch (InvalidApiKey $e) {
             $this->logger->error($e->getMessage());
@@ -61,7 +61,7 @@ class DooFinderClient implements IDooFinderClient
     /**
      * @return \Doofinder\Api\Management\Client
      */
-    public function getClient(): \Doofinder\Api\Management\Client
+    public function getClient(): \Doofinder\Management\ManagementClient
     {
         if (!$this->client) {
             $this->init($this->apiKey);
