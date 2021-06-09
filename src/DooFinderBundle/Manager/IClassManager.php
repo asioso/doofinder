@@ -8,7 +8,7 @@
  *
  */
 
-namespace DooFinderBundle\DependencyInjection;
+namespace DooFinderBundle\Manager;
 
 
 /**

@@ -37,7 +37,7 @@ services:
       - '%kernel.root_dir%/../data/'
       - '@logger'
 
-  DooFinderBundle\DependencyInjection\DooFinderSearch\IDooFinderSearchService: '@DooFinderBundle\DependencyInjection\DoofinderSearch\DooFinderSearchService'
+  DooFinderBundle\DependencyInjection\DooFinderSearch\IDooFinderSearchService: '@DooFinderBundle\DependencyInjection\DooFinderSearch\DooFinderSearchService'
 
   DooFinderBundle\DependencyInjection\DooFinderSearch\DooFinderSearchService:
     arguments:

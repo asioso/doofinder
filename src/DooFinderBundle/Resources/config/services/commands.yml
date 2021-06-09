@@ -11,13 +11,10 @@ services:
   #        tags: ['controller.service_arguments']
 
   DooFinderBundle\Command\SetupDooFinderTypesCommand:
-    private: false
     tags: ['controller.service_arguments']
 
   DooFinderBundle\Command\PushObjectsToDooFinderCommand:
-    private: false
     tags: ['controller.service_arguments']
 
   DooFinderBundle\Command\ProcessDooFinderDataFeedCommand:
-    private: false
     tags: ['controller.service_arguments']

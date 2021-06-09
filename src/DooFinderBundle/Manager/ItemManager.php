@@ -10,7 +10,7 @@
 
 namespace DooFinderBundle\Manager;
 
-use DooFinderBundle\DependencyInjection\IClassManager;
+use DooFinderBundle\Manager\IClassManager;
 
 /**
  * Class ItemManager
